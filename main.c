@@ -264,8 +264,17 @@ void search_by_st(){
 }
 
 void sort_record(){
-	printf("Undefined\n");
+	printf("Sorting record...\n");
+	int size = a_count();
+	A_Record* records[MAX_DOGS};
+	a_sort(records);
+	printf("Completed sorting.\n");
+	for(int i=0;i<size;i++){
+		A_Record* p = records[i];
+		printf("%d. %s\n", i+1, a_to_string(p));
+	}
 }
+
 
 void stat_record(){
 	int i, size;
